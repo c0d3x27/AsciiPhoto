@@ -1,6 +1,6 @@
 from PIL import Image
 
-ASCII_CHARS = ['.',',',':',';','+','*','?','%','S','#','@']
+ASCII_CHARS = ['.',',',':',';','+','*','?','%','S','#','_','@']
 ASCII_CHARS = ASCII_CHARS[::-1]
 
 '''
@@ -8,7 +8,7 @@ method resize():
     - takes as parameters the image, and the final width
     - resizes the image into the final width while maintaining aspect ratio
 '''
-def resize(image, new_width=100):
+def resize(image, new_width=60):
     (old_width, old_height) = image.size
     aspect_ratio = old_height/old_width
     new_height = int(aspect_ratio * new_width)
@@ -36,7 +36,7 @@ def modify(image, buckets=25):
 method do():
     - does all the work by calling all the above functions
 '''
-def do(image, new_width=100):
+def do(image, new_width=60):
     image = resize(image)
     image = grayscalify(image)
 
@@ -70,7 +70,7 @@ def runner(path):
     # Else, to write into a file
     # Note: This text file will be created by default under
     #       the same directory as this python file,
-    #       NOT in the directory from where the image is pulled. 
+    #       NOT in the directory from where the image is pulled.
     f = open('img.txt','w')
     f.write(image)
     f.close()
