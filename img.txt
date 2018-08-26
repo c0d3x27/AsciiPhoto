@@ -1,26 +1,3 @@
-<p align="center">
-<img src="github-rsc/21a1cbee-fce2-4015-8bf9-22148bb51164.png" width="100" hight="100"> </p>
-
-# Convert Photos into Ascii imagen using Python
-<img src="github-rsc/asciiphoto.2018.gif" width="900" hight="100">
-
-## Contents
-- [What AsciiPhoto is?](#what-asciiphoto-is)
-- [How AsciiPhoto works](#how-asciiphoto-works)
-- [How to use AsciiPhoto](#how-to-use-asciiphoto)
-- [Future Plans](#future-plans)
-
-# What AsciiPhoto is?
-
-**AsciiPhoto** is a python script that takes in as input an image, and returns a text output that resembles the input image. In other words, it replicates an image with certain characters.
-
-- For example, when the following image of Instagram logo -
-
-<p align="center">
-<img src="PhotoSample.png" width="500" hight="100"> </p>
-
-is passed as a parameter into **AsciiPhoto**, the following output is observed -
-```
 ,,,,,,,,?@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@?,,,,,,,,
 ,,,,,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,,,,,,
 ,,,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,,,,
@@ -81,31 +58,3 @@ is passed as a parameter into **AsciiPhoto**, the following output is observed -
 ,,,,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,,,,
 ,,,,,:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,,,,,,
 ,,,,,,,,%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@?,,,,,,,,
-```
-
--------------------------------------------------------------------------------------------------------
-# How AsciiPhoto works
-
-AsciiPhoto works in a rather simple and intuitive way. Here's the algorithm -
-
-  -  Resize the image to a standard dimension, while maintaining aspect ratio
-  -  Convert to grayscale (the reason for doing so is because characters are replaced based on their intensity)
-  -  Create list of special characters to replace pixels with
-  -  Classify and divide pixels into buckets or groups, based on their intensity
-  -  Replace all pixels in a bucket with the corresponding special character
-  -  Print the text into terminal or write into a file
-  -  Done
-
--------------------------------------------------------------------------------------------------------
-# How to use AsciiPhoto
-
-  -  Ensure you have the required dependency "PIL" for Python installed. (pip install pillow)
-  -  Clone the repo
-  -  Run the python script, and pass the image path as the parameter
-  -  The script will print the output in the terminal, and will also write into a file `img.txt` in the same directory as the `AsciiPhoto.py`
-  - Done!
-
--------------------------------------------------------------------------------------------------------
-# Future Plans
-
-  -  Alternatively support colored outputs by printing the text onto an image
