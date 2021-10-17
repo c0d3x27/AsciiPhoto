@@ -18,7 +18,7 @@ def resize(image, new_width=60):
 '''
 method grayscalify():
     - takes an image as a parameter
-    - returns the grayscale version of image
+    - return the grayscale version of the image
 '''
 def grayscalify(image):
     return image.convert('L')
