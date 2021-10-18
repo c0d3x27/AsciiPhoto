@@ -1,7 +1,17 @@
 <p align="center">
 <img src="github-rsc/21a1cbee-fce2-4015-8bf9-22148bb51164.png" width="100" hight="100"> </p>
 
-# Convert Photos into Ascii imagen using Python
+<p align="center">
+  <a href="https://www.python.org/">
+  <img alt="Built With Python" src="https://img.shields.io/badge/built_with-python-ff69b4.svg?style=plastic" />
+  </a>
+  <a href="https://github.com/c0d3x27/AsciiPhoto/blob/master/LICENSE">
+  <img alt="GPL-3.0 License" src="https://img.shields.io/badge/license-GPL_3.0-green.svg?style=plastic" />
+  </a>
+  <br/>
+</p>
+
+# Convert Photos into Ascii images using Python
 <img src="github-rsc/asciiphoto.2018.gif" width="900" hight="100">
 
 ## Contents
@@ -99,11 +109,25 @@ AsciiPhoto works in a rather simple and intuitive way. Here's the algorithm -
 -------------------------------------------------------------------------------------------------------
 # How to use AsciiPhoto
 
-  -  Ensure you have the required dependency "PIL" for Python installed. (pip install pillow)
-  -  Clone the repo
-  -  Run the python script, and pass the image path as the parameter
-  -  The script will print the output in the terminal, and will also write into a file `img.txt` in the same directory as the `AsciiPhoto.py`
-  - Done!
+Clone the project
+```bash
+  $ git clone https://github.com/c0d3x27/AsciiPhoto.git
+```
+Go to the project directory
+```bash
+  $ cd AsciiPhoto
+```
+Install dependencies
+```bash
+  $ pip install pillow
+```
+Run the python script, and pass the image path as the parameter
+```bash
+  $ python AsciiPhoto.py `image_path`
+```
+The script will print the output in the terminal, and will also write into a file `img.txt` in the same directory as the `AsciiPhoto.py`
+
+Done! 
 
 -------------------------------------------------------------------------------------------------------
 # Future Plans
